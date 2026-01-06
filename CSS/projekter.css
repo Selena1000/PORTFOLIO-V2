@@ -1,0 +1,130 @@
+.projekter {
+  padding: 40px 20px;
+  background-color: #f5f2e9;
+  min-height: 10vh;
+  margin: 20px 0;
+}
+.projekter-titel {
+  font-family: "Lora", serif;
+  font-weight: 530;
+  letter-spacing: 1px;
+  color: #2b4593;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+.projekt-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.projekt-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.projekt-mappe {
+  width: 40%;
+  height: auto;
+}
+.projekt-tekst h3 {
+  font-family: "lora", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #000;
+}
+.projekt-tekst p {
+  font-family: "lora", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  color: #000;
+}
+.blomst-container {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+.projekter-titel {
+  margin: 0;
+  color: #3b4d8d;
+  font-family: "Serif-font", serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+.blomst-dekoration {
+  position: absolute;
+  top: -4em;
+  right: -5em;
+  width: 100px;
+  height: auto;
+}
+.projekt-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.projekt-link:active {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+.projekt-item {
+  display: block;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+@media (min-width: 800px) {
+  .projekt-liste {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+    gap: 0px 0px;
+    max-width: 900px;
+    justify-items: center;
+  }
+  .projekt-tekst h3 {
+    font-size: 24px;
+  }
+  .projekt-tekst p {
+    font-size: 22px;
+  }
+  .projekt-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+  }
+  .projekt-mappe {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: filter 0.3s ease;
+  }
+  .projekt-link:hover {
+    transform: translateY(-10px);
+  }
+  .projekt-link:hover .projekt-mappe {
+    filter: brightness(1.5);
+  }
+  .projekt-link:hover .projekt-tekst h3,
+  .projekt-link:hover .projekt-tekst p {
+    color: #356a92;
+  }
+  .blomst-dekoration {
+    position: absolute;
+    top: -3em;
+    right: -5em;
+    width: 100px;
+    height: auto;
+  }
+}

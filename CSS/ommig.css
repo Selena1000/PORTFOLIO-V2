@@ -1,0 +1,200 @@
+.ommig {
+  text-align: center;
+  padding: 20px;
+}
+.overskrift {
+  position: relative;
+  display: inline-block;
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+.hvemerjeg {
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #2b4593;
+  text-align: center;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+.blomst {
+  position: absolute;
+  top: -110%;
+  right: -80px;
+  width: 100px;
+  max-width: 120px;
+  height: auto;
+  z-index: 1;
+}
+.portrait {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5em;
+  display: block;
+  margin: 0 auto;
+}
+.blomst2 {
+  z-index: -2;
+  position: absolute;
+  top: 22%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+}
+.ommig-sektion {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titel-tekst {
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.blomst3 {
+  position: absolute;
+  left: 40px;
+  top: -49px;
+  width: 70px;
+  height: auto;
+}
+.blomst4 {
+  position: absolute;
+  left: 44px;
+  top: -40px;
+  width: 70px;
+  height: auto;
+}
+.blomst5 {
+  position: absolute;
+  left: -25px;
+  top: -40px;
+  width: 70px;
+  height: auto;
+}
+.lidtommig {
+  font-family: "Lora", sans-serif;
+  color: #2b4593;
+  font-weight: 600;
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+.boks1 {
+  background-color: #e4e1cf;
+  padding: 40px;
+  margin: 2.5em 0;
+  border-radius: 40px;
+  max-width: 700px;
+  width: 100%;
+}
+.boks1 p {
+  font-family: "playfair display", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.erfaring-liste {
+  text-align: center;
+}
+.erfaring-liste p {
+  font-family: "playfair display", sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.erfaring-liste strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.ommig-grid-wrapper {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .ommig {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  .hvemerjeg {
+    padding-bottom: 3em;
+  }
+  .blomst {
+    width: 170px;
+    top: -77px;
+    right: -85px;
+  }
+  .blomst2 {
+    width: 40%;
+    top: 10%;
+    left: 50%;
+  }
+  .ommig-sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+    padding: 50px;
+  }
+  .ommig-sektion > .titel-tekst:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: -16em;
+  }
+  .ommig-sektion > .titel-tekst:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .ommig-sektion > .titel-tekst:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .boks1 {
+    max-width: 100%;
+    margin: 1.5em 0;
+  }
+  .lidtommig {
+    padding-left: 20px;
+  }
+  .blomst3,
+  .blomst4,
+  .blomst5 {
+    left: -15px;
+    top: -35px;
+    width: 75px;
+  }
+  .knap-beholder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -30px;
+    padding-bottom: 40px;
+  }
+  .bund-knap {
+    display: inline-block;
+    background-color: #e4e1cf;
+    color: #2b4593;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid #c5c2b0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .bund-knap:hover {
+    background-color: #d8d4bf;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+}
